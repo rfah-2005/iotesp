@@ -109,7 +109,7 @@ BLYNK_WRITE(V6)
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
-    servo_23.write(90);
+    servo_23.write(45);
 
   } else {
     servo_23.write(0);
