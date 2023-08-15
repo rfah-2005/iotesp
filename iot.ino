@@ -136,7 +136,7 @@ void setup() {
  pinMode(19,OUTPUT);
  pinMode(15,OUTPUT);
   servo_23.attach(23);
-  pinMode(39, INPUT);
+  pinMode(36, INPUT);
   Timer1.setInterval(300, Timer1_TimerEvent);
 
 }
