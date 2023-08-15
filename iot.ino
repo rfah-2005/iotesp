@@ -22,10 +22,10 @@ int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,HIGH);
     digitalWrite(14,LOW);
-    analogWrite(25,250);
+    analogWrite(25,150);
     digitalWrite(18,HIGH);
     digitalWrite(19,LOW);
-    analogWrite(15,250);
+    analogWrite(15,150);
 
   } else {
     digitalWrite(13,HIGH);
@@ -44,10 +44,10 @@ int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,HIGH);
     digitalWrite(14,LOW);
-    analogWrite(25,100);
+    analogWrite(25,150);
     digitalWrite(18,LOW);
     digitalWrite(19,HIGH);
-    analogWrite(15,10);
+    analogWrite(15,20);
 
   } else {
     digitalWrite(13,HIGH);
@@ -66,10 +66,10 @@ int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,LOW);
     digitalWrite(14,HIGH);
-    analogWrite(25,100);
+    analogWrite(25,150);
     digitalWrite(18,LOW);
     digitalWrite(19,HIGH);
-    analogWrite(15,100);
+    analogWrite(15,150);
 
   } else {
     digitalWrite(13,LOW);
@@ -88,10 +88,10 @@ int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,LOW);
     digitalWrite(14,HIGH);
-    analogWrite(25,100);
+    analogWrite(25,150);
     digitalWrite(18,HIGH);
     digitalWrite(19,LOW);
-    analogWrite(15,10);
+    analogWrite(15,20);
 
   } else {
     digitalWrite(13,LOW);
@@ -109,7 +109,7 @@ BLYNK_WRITE(V6)
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
-    servo_23.write(90);
+    servo_23.write(30);
 
   } else {
     servo_23.write(0);
