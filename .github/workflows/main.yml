@@ -18,8 +18,8 @@ jobs:
       - uses: action/checkout@v3
       - uses: arduino/compile-sketches@v1
         with:
-          github-token: $({ secrets.GITHUB_TOKEN })
-          fqbn: ${{ matri.fqbn }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          fqbn: ${{ matrix.fqbn }}
           platform: |
             - name: esp32:esp32
               source~url: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
