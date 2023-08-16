@@ -8,6 +8,8 @@
 
 #define BLYNK_PRINT Serial
 
+//adding LDR HERE
+
 
 #include <WiFi.h>
 #include <WiFiClient.h>
