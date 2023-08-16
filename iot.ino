@@ -16,7 +16,7 @@ char auth[] = BLYNK_AUTH_TOKEN;
 
 char ssid[] = "OPPO F11 Pro";
 char pass[] = "Rfah20051984!";
-BLYNK_WRITE(V0)
+BLYNK_WRITE(V0)					//motor forward
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
@@ -38,7 +38,7 @@ int pinValue = param.asInt();
   }
 }
 
-BLYNK_WRITE(V4)
+BLYNK_WRITE(V4)					//reverse
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
@@ -60,13 +60,13 @@ int pinValue = param.asInt();
   }
 }
 
-BLYNK_WRITE(V1)
+BLYNK_WRITE(V1)					//right
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,LOW);
     digitalWrite(14,HIGH);
-    analogWrite(25,150);
+    analogWrite(20,150);
     digitalWrite(18,LOW);
     digitalWrite(19,HIGH);
     analogWrite(15,150);
@@ -82,16 +82,16 @@ int pinValue = param.asInt();
   }
 }
 
-BLYNK_WRITE(V5)
+BLYNK_WRITE(V5)					//left
 {
 int pinValue = param.asInt();
   if (pinValue == 1) {
     digitalWrite(13,LOW);
     digitalWrite(14,HIGH);
-    analogWrite(25,150);
+    analogWrite(15,20);
     digitalWrite(18,HIGH);
     digitalWrite(19,LOW);
-    analogWrite(15,20);
+    analogWrite(20,150);
 
   } else {
     digitalWrite(13,LOW);
