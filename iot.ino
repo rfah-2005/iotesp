@@ -9,6 +9,9 @@
 #define BLYNK_PRINT Serial
 
 //adding LDR HERE
+#define Leftldr 39
+#define Centreldr 36
+#define Rightldr  34
 
 
 #include <WiFi.h>
